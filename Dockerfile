@@ -1,7 +1,9 @@
 FROM alpine:3.8
 
-RUN apk add -U wireguard-tools
+RUN apt update \
+    && apk add -U wireguard-tools
 
-RUN
+RUN wg-quick up wg0
+
 
 
