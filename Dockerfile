@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-RUN apk add --update --no-cache ca-certificates \
+RUN apk update
     && apk add -U wireguard-tools
     
 
